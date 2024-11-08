@@ -11,7 +11,8 @@
 <p><b>git reset arquivo</b>  --> Remove todas as alterações do stage para commit. </p>
 <br>
 <p><b>git commit -m "comentario aqui"</b>  --> Cria um comentario para o commit.</p>
-<br>
+
+<h2>Repositorio remoto</h2>
 <p><b>git remote add origin https://github.com/sua_pasta_github.git</b> --> Adiciona o caminho do repositório remoto.</p>
 <p><b>git remote -v</b> --> Lista os caminhos remotos existentes no repositório local.</p>
 <p><b>git remote rm nome</b> --> Remove o caminho do repositório local.</p>
@@ -21,6 +22,7 @@
 <br>
 <p><b>git log --oneline</b> --> Exibe todos os commits já feitos.</p>
 # -----------
+
 <h2>Criando e gerenciando Branchs.</h2>
 <p><b>git branch -M nome</b> --> Renomeia a branch.</p>
 <p><b>git branch nome</b> --> Cria a branch.</p> 
