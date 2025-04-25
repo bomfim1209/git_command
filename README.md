@@ -21,6 +21,7 @@
 <p><b>git remote -v</b> --> Lista os caminhos remotos existentes no repositório local.</p>
 <p><b>git remote rm nome</b> --> Remove o caminho do repositório local.</p>
 <br>
+<p><b>git push -u origin main</b>  --> cria um atalho para o push e a branch desejada.</p>
 <p><b>git push</b>  --> Sobe o arquivo para o repositório remoto.</p>
 <p><b>git pull</b> --> Recupera os arquivos do repositório remoto.</p>
 <br>
