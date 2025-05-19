@@ -44,8 +44,11 @@
 <p><b>git fetch origin branch_name</b> --> Podemos especificar o ramo que queremos buscar passando-o como parâmetro.</p>
 <br>
 <p><b>git checkout nome</b> --> Alterna entre as branch.</p>
-<p><b>git merge nome_da_branch</b> --> Nesse caso é necessario esta na branch de destino para iniciar o merge
-Ex: estou na branch MAIN e desejo incorporrar as mudanças da branch TESTE<br>
+
+ # -----------
+<h2>Merge de duas branchs</h2>
+<p><b>git merge nome_da_branch</b> --> Nesse caso é necessario esta na branch de destino para iniciar o merge.
+<br>Ex: estou na branch MAIN e desejo incorporrar as mudanças da branch TESTE<br>
 git merge teste
 
  # -----------
