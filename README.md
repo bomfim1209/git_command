@@ -5,6 +5,17 @@
 # Comandos Git
 
 # -----------
+<h2>Configurações Globais e locais</h2>
+<p><b>git config --global --list </b> --> Lista as configurações globais do git.</p>
+<p><b>git config --global user.name "Seu Novo Nome" </b> --> Define o nome de usuário global do git.</p>
+<p><b>git config --global user.email "seu.novo.email@exemplo.com" </b> --> Define o e-mail global do git.</p>
+<br>
+
+<p><b>git config --list </b> --> Lista as configurações locais do repositório git do projeto.</p>
+<p><b>git config user.name "Seu Novo Nome" </b> --> Define o nome de usuário local do projeto git.</p>
+<p><b>git config user.email "seu.novo.email@exemplo.com" </b> --> Define o e-mail local do projeto git.</p>
+
+# -----------
 <h2>Comandos básicos de Git</h2>
 <p><b>git init </b> --> Inicia o repositorio local.</p>
 <br>
