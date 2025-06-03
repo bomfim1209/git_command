@@ -11,9 +11,17 @@
 <p><b>git config --global user.email "seu.novo.email@exemplo.com" </b> --> Define o e-mail global do git.</p>
 <br>
 
-<p><b>git config --list </b> --> Lista as configurações locais do repositório git do projeto.</p>
-<p><b>git config user.name "Seu Novo Nome" </b> --> Define o nome de usuário local do projeto git.</p>
-<p><b>git config user.email "seu.novo.email@exemplo.com" </b> --> Define o e-mail local do projeto git.</p>
+<p><b>git config --local --list </b> --> Lista as configurações locais do repositório git do projeto.</p>
+<p><b>git config --local user.name "Seu Novo Nome" </b> --> Define o nome de usuário local do projeto git.</p>
+<p><b>git config --local user.email "seu.novo.email@exemplo.com" </b> --> Define o e-mail local do projeto git.</p>
+<br>
+
+<h2>Removendo usuário e e-mail</h2>
+<p><b>git config --global --unset user.name </b> --> Remove usuário global.</p>
+<p><b>git config --global --unset user.email </b> --> Remove usuário global.</p>
+
+<p><b>git config --local --unset user.name </b> --> Remove usuário local.</p>
+<p><b>git config --local --unset user.email </b> --> Remove usuário local.</p>
 
 # -----------
 <h2>Comandos básicos de Git</h2>
