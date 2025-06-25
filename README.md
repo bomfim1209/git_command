@@ -79,4 +79,5 @@ git merge teste
  # -----------
 <h2>Revertendo commits.</h2>
 <p><b>git log --oneline</b> --> Para exibir os utlimos commits já realizados.</p>
-<p><b>git checkout ID-DA-BRANCH</b> --> Reverte para a versão da branch especificada sem perder tudo o que já foi feito.</p>
+<p><b>git checkout ID-DA-BRANCH</b> --> Vai para a versão do sistema da branch especificada sem perder tudo o que já foi feito.</p>
+<p><b>git reset HEAD~1</b> <--(Passar exatamente assim no terminal) --> Este é o mais seguro a maioria das situações para desfazer o último commits que ainda estão apenas na sua maquina local. Ele remove o commit do histórico, mas todas as alterações feitas nesse commit voltam para sua área de trabalho e área de preparação (stage).</p>
