@@ -1,5 +1,9 @@
 # Gitignore
-<p><b>git rm -r --cached nome_do_arquivo ou diretorio</b>  --> Remove dos itens ja rastreados o arquivo ou diretorio.(usar quando subir arquivos sensiveis como chaves de APIs.)</p>
+<h3 style="text-color: red;">ATENÇÃO COM O PRÓXIMO COMANDO</h3>
+<p><b>git rm -r --cached nome_do_arquivo ou diretorio</b>  --> Remove dos itens ja rastreados, os arquivos ou diretorios.(usar quando subir arquivos sensiveis como chaves de APIs.)</p>
+<p><b>OBS.</b>Esta ação vai remover os arquivos do rastreamento do git, e com isso o git entende que os arquivos foram apagados do repositorio e executa o comando de "delete". Para não se perder qualquer informção importante, faça o backup da pasta antes de executar o comando, esta ação é desnecessaria se tiver a certeza de não esta lidando com dados impostantes. </p>
+
+<p><b>git check-ignore -v caminho/da/sua/pasta/ou/documento</b>  --> Verifica se o arquivo esta sendo ignorado pelo git ou não.
 
 # -----------
 # Comandos Git
