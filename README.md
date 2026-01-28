@@ -1,9 +1,13 @@
 # Gitignore
 <h3 style="text-color: red;">ATENÇÃO COM O PRÓXIMO COMANDO</h3>
-<p><b>git rm -r --cached nome_do_arquivo_ou_diretorio</b>  --> Remove dos itens ja rastreados, os arquivos ou diretorios.(usar quando subir arquivos sensiveis como chaves de APIs.)</p>
+<p><b id="apagar_do_repositorio">git rm -r --cached nome_do_arquivo_ou_diretorio</b>  --> Remove dos itens ja rastreados, os arquivos ou diretorios.(usar quando subir arquivos sensiveis como chaves de APIs.)</p>
 <p><b>OBS.</b>Esta ação vai remover os arquivos do rastreamento do git, e com isso o git entende que os arquivos foram apagados do repositorio e executa o comando de "delete". Para não se perder qualquer informção importante, faça o backup da pasta antes de executar o comando, esta ação é desnecessaria se tiver a certeza de não esta lidando com dados impostantes. </p>
 
 <p><b>git check-ignore -v caminho/da/sua/pasta/ou/documento</b>  --> Verifica se o arquivo esta sendo ignorado pelo git ou não.
+<p>Caso rode o comando e apareça um sinal de erro(icone vermelho - git bash) e console fica vazio pode ser usado o proximo comando para mostrar o que foi retornado.</p>
+<p><b>echo $?</b> Se retornar 1: O Git confirmou que não encontrou regra de ignore para esse caminho. </p>
+<p><b>OBS1.</b> Se o erro ocorreu com um novo arquivo, o problema pode estar no gitignore.</p>
+<p><b>OBS2.</b> Se um arquivo já entrou no índice (ou seja, já foi rastreado em algum commit anterior), o Git prioriza o fato de que ele é um arquivo importante do projeto e ignora solenemente qualquer nova regra que você coloque no .gitignore. Por isso deve se executado o comando <a href="#apagar_do_repositorio"></a>git rm -r --cached nome_do_arquivo_ou_diretorio.</p>
 
 # -----------
 # Comandos Git
