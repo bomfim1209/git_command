@@ -7,7 +7,7 @@
 <p>Caso rode o comando e apareça um sinal de erro(icone vermelho - git bash) e console fica vazio pode ser usado o proximo comando para mostrar o que foi retornado.</p>
 <p><b>echo $?</b> Se retornar 1: O Git confirmou que não encontrou regra de ignore para esse caminho. </p>
 <p><b>OBS1.</b> Se o erro ocorreu com um novo arquivo, o problema pode estar no gitignore.</p>
-<p><b>OBS2.</b> Se um arquivo já entrou no índice (ou seja, já foi rastreado em algum commit anterior), o Git prioriza o fato de que ele é um arquivo importante do projeto e ignora solenemente qualquer nova regra que você coloque no .gitignore. Por isso deve se executado o comando <a href="#apagar_do_repositorio"></a>git rm -r --cached nome_do_arquivo_ou_diretorio.</p>
+<p><b>OBS2.</b> Se um arquivo já entrou no índice (ou seja, já foi rastreado em algum commit anterior), o Git prioriza o fato de que ele é um arquivo importante do projeto e ignora solenemente qualquer nova regra que você coloque no .gitignore. Por isso deve se executado o comando <a href="#apagar_do_repositorio">git rm -r --cached nome_do_arquivo_ou_diretorio</a>.</p>
 
 # -----------
 # Comandos Git
