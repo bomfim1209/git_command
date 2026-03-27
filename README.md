@@ -78,6 +78,13 @@
 <br>Ex: estou na branch MAIN e desejo incorporrar as mudanças da branch TESTE<br>
 git merge teste
 
+<h3>Revertendo o Merge de duas branchs</h3>
+<p><b>git reset --hard HEAD~1(Merge ainda esta localmente na maquina)</b> --> Esse comando joga sua branch exatamente para onde ela estava um segundo antes do merge.</p>
+
+<p><b>git revert -m 1 hash-do-commit-de-merge(Já foi feito o PUSH)</b> --> Esse comando joga sua branch exatamente para onde ela estava um segundo antes do merge.</p>
+<p><b>-m 1</b>: Geralmente é a sua branch atual (ex: main ou develop).</p>
+<p><b>hash-do-commit-de-merge</b>: É o código do commit que o merge gerou (você acha ele no git log). hash-do-commit-de-merge>: É o código do commit que o merge gerou (você acha ele no git log).</p>
+
  # -----------
 <h2>Atualizando um repositorio local e remoto</h2>
 <p><b>git pull origin nome</b> --> Para puxar os arquivos de uma branch de um repositorio remoto.</p>
