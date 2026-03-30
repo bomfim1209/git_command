@@ -43,6 +43,8 @@
 <br>
 <p><b>git commit -m "comentario aqui"</b>  --> Cria um comentario para o commit.</p>
 
+<p><b>git commit --amend -m "Sua nova mensagem corrigida aqui"</b>  --> Renomeia o commit caso necessário(forma local).</p>
+
 <h2>Repositorio remoto</h2>
 <p><b>git remote add origin https://github.com/sua_pasta_github.git</b> --> Adiciona o caminho do repositório remoto.</p>
 <p><b>git remote -v</b> --> Lista os caminhos remotos existentes no repositório local.</p>
