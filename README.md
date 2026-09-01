@@ -38,6 +38,9 @@
 <p><b>git add .</b>  --> Adiciona todos os documentos para commit. </p>
 <p><b>git add nome </b>  --> Adiciona um documento ou diretorio especifico para commit. </p> 
 <br>
+<p><b>git restore caminho/do/arquivo</b>  --> Para descartar as alterações feitas em um arquivo específico e fazê-lo voltar exatamente a como estava no último commit. </p>
+<br>
+
 <p><b>git reset</b>  --> Remove todas as alterações do stage para commit. </p>
 <p><b>git reset arquivo</b>  --> Remove todas as alterações do stage para commit. </p>
 <br>
