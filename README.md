@@ -14,36 +14,39 @@
 - Substitua valores como `NOME_DA_BRANCH`, `HASH_DO_COMMIT` e `URL_DO_REPOSITORIO` pelos valores reais.
 - Quando houver `⚠️`, leia a observação antes de executar o comando.
 
-> 💡 **Dica:** no GitHub, os títulos deste README geram automaticamente uma navegação por seções no painel de *Outline*.
+> 💡 **Dica:** o GitHub gera links automáticos para títulos, mas este guia usa âncoras nomeadas no índice para manter a navegação estável mesmo quando um título contém emojis, acentos ou formatação.
 
 ---
 
 ## 📑 Índice
 
-- [1. Modelo mental do Git](#1--modelo-mental-do-git)
-- [2. Verificar instalação e ajuda](#2--verificar-instalação-e-ajuda)
-- [3. Configuração do Git](#3--configuração-do-git)
-- [4. Criar ou clonar um repositório](#4--criar-ou-clonar-um-repositório)
-- [5. Consultar o estado do projeto](#5--consultar-o-estado-do-projeto)
-- [6. Alterações e staging](#6--alterações-e-staging)
-- [7. Commits](#7--commits)
-- [8. Desfazer alterações: restore × reset × revert](#8--desfazer-alterações-restore--reset--revert)
-- [9. Branches](#9--branches)
-- [10. Repositórios remotos](#10--repositórios-remotos)
-- [11. Fetch × Pull × Push](#11--fetch--pull--push)
-- [12. Merge](#12--merge)
-- [13. Resolver conflitos](#13--resolver-conflitos)
-- [14. Stash](#14--stash)
-- [15. Histórico e investigação](#15--histórico-e-investigação)
-- [16. Tags](#16--tags)
-- [17. .gitignore](#17-gitignore)
-- [18. Remover arquivos já rastreados](#18--remover-arquivos-já-rastreados)
-- [19. Recuperação com reflog](#19--recuperação-com-reflog)
-- [20. Fluxos práticos do dia a dia](#20--fluxos-práticos-do-dia-a-dia)
-- [21. Comandos perigosos](#21--comandos-perigosos)
-- [22. Referência rápida](#22--referência-rápida)
+- [1. Modelo mental do Git](#sec-1)
+- [2. Verificar instalação e ajuda](#sec-2)
+- [3. Configuração do Git](#sec-3)
+- [4. Criar ou clonar um repositório](#sec-4)
+- [5. Consultar o estado do projeto](#sec-5)
+- [6. Alterações e staging](#sec-6)
+- [7. Commits](#sec-7)
+- [8. Desfazer alterações: restore × reset × revert](#sec-8)
+- [9. Branches](#sec-9)
+- [10. Repositórios remotos](#sec-10)
+- [11. Fetch × Pull × Push](#sec-11)
+- [12. Merge](#sec-12)
+- [13. Resolver conflitos](#sec-13)
+- [14. Stash](#sec-14)
+- [15. Histórico e investigação](#sec-15)
+- [16. Tags](#sec-16)
+- [17. .gitignore](#sec-17)
+- [18. Remover arquivos já rastreados](#sec-18)
+- [19. Recuperação com reflog](#sec-19)
+- [20. Fluxos práticos do dia a dia](#sec-20)
+- [21. Comandos perigosos](#sec-21)
+- [22. Referência rápida](#sec-22)
 
 ---
+
+<!-- Anchor: sec-1 -->
+<a name="sec-1"></a>
 
 # 1. 🧠 Modelo mental do Git
 
@@ -93,6 +96,9 @@ git pull
 
 ---
 
+<!-- Anchor: sec-2 -->
+<a name="sec-2"></a>
+
 # 2. 🔎 Verificar instalação e ajuda
 
 ### Ver versão instalada
@@ -126,6 +132,9 @@ git <comando> --help
 ```
 
 ---
+
+<!-- Anchor: sec-3 -->
+<a name="sec-3"></a>
 
 # 3. ⚙️ Configuração do Git
 
@@ -202,6 +211,9 @@ git config --list --show-origin
 
 ---
 
+<!-- Anchor: sec-4 -->
+<a name="sec-4"></a>
+
 # 4. 📦 Criar ou clonar um repositório
 
 ## Criar um repositório local
@@ -231,6 +243,9 @@ cd projeto
 ```
 
 ---
+
+<!-- Anchor: sec-5 -->
+<a name="sec-5"></a>
 
 # 5. 🔍 Consultar o estado do projeto
 
@@ -267,6 +282,9 @@ git status --short
 ```
 
 ---
+
+<!-- Anchor: sec-6 -->
+<a name="sec-6"></a>
 
 # 6. 📥 Alterações e staging
 
@@ -316,6 +334,9 @@ git add -p
 
 ---
 
+<!-- Anchor: sec-7 -->
+<a name="sec-7"></a>
+
 # 7. 📝 Commits
 
 ## Criar commit
@@ -354,6 +375,9 @@ git commit --amend --no-edit
 > ⚠️ O `--amend` modifica o último commit em vez de criar outro.
 
 ---
+
+<!-- Anchor: sec-8 -->
+<a name="sec-8"></a>
 
 # 8. ↩️ Desfazer alterações: `restore` × `reset` × `revert`
 
@@ -460,6 +484,9 @@ git revert -m 1 HASH_DO_MERGE
 
 ---
 
+<!-- Anchor: sec-9 -->
+<a name="sec-9"></a>
+
 # 9. 🌿 Branches
 
 ## Listar branches locais
@@ -558,6 +585,9 @@ git push origin --delete NOME_DA_BRANCH
 
 ---
 
+<!-- Anchor: sec-10 -->
+<a name="sec-10"></a>
+
 # 10. 🌐 Repositórios remotos
 
 ## Adicionar remoto
@@ -597,6 +627,9 @@ git remote remove origin
 ```
 
 ---
+
+<!-- Anchor: sec-11 -->
+<a name="sec-11"></a>
 
 # 11. 🔄 Fetch × Pull × Push
 
@@ -672,6 +705,9 @@ pode ser suficiente.
 
 ---
 
+<!-- Anchor: sec-12 -->
+<a name="sec-12"></a>
+
 # 12. 🔀 Merge
 
 O merge incorpora o histórico de uma branch na branch atual.
@@ -717,6 +753,9 @@ main ─────●────●─────────●  ← merge
 ```
 
 ---
+
+<!-- Anchor: sec-13 -->
+<a name="sec-13"></a>
 
 # 13. ⚔️ Resolver conflitos
 
@@ -769,6 +808,9 @@ git merge --abort
 > 💡 Antes de resolver manualmente, entenda quais alterações pertencem a cada branch.
 
 ---
+
+<!-- Anchor: sec-14 -->
+<a name="sec-14"></a>
 
 # 14. 🧳 Stash
 
@@ -825,6 +867,9 @@ git stash clear
 > ⚠️ `stash clear` remove todos os stashes armazenados.
 
 ---
+
+<!-- Anchor: sec-15 -->
+<a name="sec-15"></a>
 
 # 15. 🔎 Histórico e investigação
 
@@ -886,6 +931,9 @@ git log main..feature/login --oneline
 
 ---
 
+<!-- Anchor: sec-16 -->
+<a name="sec-16"></a>
+
 # 16. 🏷️ Tags
 
 Tags são úteis para marcar versões ou pontos importantes do histórico.
@@ -941,6 +989,9 @@ git push origin --delete v1.0.0
 ```
 
 ---
+
+<!-- Anchor: sec-17 -->
+<a name="sec-17"></a>
 
 # 17. 🚫 `.gitignore`
 
@@ -1007,6 +1058,9 @@ git commit -m "Atualiza arquivos ignorados"
 
 ---
 
+<!-- Anchor: sec-18 -->
+<a name="sec-18"></a>
+
 # 18. 🧹 Remover arquivos já rastreados
 
 ## Remover arquivo do Git e do computador
@@ -1041,6 +1095,9 @@ git status
 
 ---
 
+<!-- Anchor: sec-19 -->
+<a name="sec-19"></a>
+
 # 19. 🛟 Recuperação com `reflog`
 
 O `reflog` é uma ferramenta extremamente útil para localizar referências anteriores do `HEAD` e recuperar situações em que você acredita ter perdido um commit.
@@ -1073,6 +1130,9 @@ git switch -c recuperacao e4f5g6h
 > ⚠️ O `reflog` é uma ferramenta de recuperação. Quanto antes você procurar uma referência perdida, melhor.
 
 ---
+
+<!-- Anchor: sec-20 -->
+<a name="sec-20"></a>
 
 # 20. 🚀 Fluxos práticos do dia a dia
 
@@ -1261,6 +1321,9 @@ git push
 
 ---
 
+<!-- Anchor: sec-21 -->
+<a name="sec-21"></a>
+
 # 21. 🚨 Comandos perigosos
 
 Tenha atenção especial com:
@@ -1323,6 +1386,9 @@ O `--force-with-lease` possui verificações adicionais para reduzir o risco de 
 > ⚠️ Mesmo `--force-with-lease` deve ser usado com entendimento do histórico compartilhado.
 
 ---
+
+<!-- Anchor: sec-22 -->
+<a name="sec-22"></a>
 
 # 22. ⚡ Referência rápida
 
